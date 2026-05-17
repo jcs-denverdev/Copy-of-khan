@@ -412,7 +412,6 @@ header {
   @media (max-width: 600px) {
     margin: 1.2em 0 1.2em .5em;
   }
-
   @media (min-width: 601px) {
     margin: 1.2em .5em;
   }
@@ -421,6 +420,9 @@ header {
   }
   @media (min-width: 850px) {
     margin: 1.2em 0 0 4em;
+  }
+  @media (min-width: 1000px) {
+    margin: 1.2em 0 0 6em;
   }
 }
 
@@ -567,7 +569,7 @@ header {
 main {
   display: block;
   width: 50%;
-  margin: 3em auto;
+  margin: 5em auto;
 }
 
 main section {
@@ -700,6 +702,10 @@ main .main_txt_section p {
   }
 
 }
+
+/******************************************
+/* BOTTOM GREY SECTION
+/*******************************************/
 
 .bottom_grey {
   background-color: rgb(247, 245, 244);
