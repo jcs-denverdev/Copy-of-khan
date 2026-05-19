@@ -585,10 +585,12 @@ main section {
 
   @media (min-width: 801px) {
     width: 50%;
+    margin: 3em auto;
   }
 
   @media (min-width: 1000px) {
     max-width: 600px;
+    margin: 0 auto;
   }
 }
 
