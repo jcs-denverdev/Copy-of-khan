@@ -566,7 +566,6 @@ header {
 
 main {
   display: block;
-  background-color: beige;
   width: 90%;
   margin: 3em auto;
 }
@@ -582,6 +581,7 @@ main section {
 
 .img_container {
   width: 60%;
+  margin: 0 auto;
 
   @media (min-width: 801px) {
     width: 50%;
@@ -595,6 +595,7 @@ main section {
 .img_container img {
   width: 100%;
   display: block;
+  
 
   @media (min-width: 801px) {
     width: 80%;
