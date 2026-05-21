@@ -565,14 +565,13 @@ header {
 /*******************************************/
 
 main {
-  float: left;
+  display: block;
   background-color: beige;
-  /* width: 90%;
-  margin: 0 auto; */
+  width: 90%;
+  margin: 3em auto;
 }
 
 main section {
-  /* margin: 3em; */
 
   @media (min-width: 801px) {
     float: left;
