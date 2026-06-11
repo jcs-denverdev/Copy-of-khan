@@ -379,7 +379,7 @@ header {
 
 }
 
-#header__left, #header__right {
+.header__left, .header__right {
 
   @media (max-width: 500px) {
     display: none;
@@ -390,9 +390,9 @@ header {
 
 }
 
-#header__left,
-#header__center,
-#header__right {
+.header__left,
+.header__center,
+.header__right {
 
   @media (min-width: 501px) {
     float: left;
@@ -402,17 +402,7 @@ header {
 
 }
 
-/* #header__left {
-  @media (min-width: 501px) {
-  }
-}
-
-#header__left * {
-  @media (min-width: 501px) {
-  }
-} */
-
-#header__left select {
+.header__left select {
   color: var(--header-text-color);
   border: none;
   min-width: 75px;
@@ -428,11 +418,11 @@ header {
   }
 }
 
-#header__left select:hover {
+.header__left select:hover {
   cursor: pointer;
 }
 
-#header__left form {
+.header__left form {
   float: left;
   min-width: 40%;
   max-width: 70%;
@@ -454,7 +444,7 @@ header {
 
 }
 
-#header__left form > input {
+.header__left form > input {
   background-color: var(--grey-bg-color);
   padding: 7px;
   border: none;
@@ -462,12 +452,12 @@ header {
   width: 100%;
 }
 
-#header__left form > input::placeholder {
+.header__left form > input::placeholder {
   color: var(--header-text-color);
   font-weight: 600;
 }
 
-#header__center {
+.header__center {
 
   @media (max-width: 500px) {
     width: 80%;
@@ -482,17 +472,21 @@ header {
 
 }
 
-#header__center * {
+.header__center > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__center * {
 
   @media (min-width: 501px) {
-    float: left;
-    width: 50%;
-    
+    /* float: left;
+    width: 50%; */
   }
 
 }
 
-#header__center img {
+.header__center img {
 
   /* @media (min-width: 501px) {
     margin: .9em .2em;
@@ -509,10 +503,11 @@ header {
     max-width: 50px;
     
   } */
-  border: 1px solid black;
+  float: left;
+  width: 25%;
 }
 
-#header__center h2 {
+.header__center h2 {
   margin: 0;
   
   /* @media (max-width: 500px) { 
@@ -532,7 +527,7 @@ header {
 
 }
 
-#header__right ul {
+.header__right ul {
   margin: 0;
   padding: 0;
 
@@ -546,7 +541,7 @@ header {
   }
 }
 
-#header__right ul li {
+.header__right ul li {
   list-style: none;
 
   @media (min-width: 501px) {
@@ -560,7 +555,7 @@ header {
 
 }
 
-#header__right ul li a, main .main_txt_section a {
+.header__right ul li a, main .main_txt_section a {
     text-decoration: none;
     color: var(--header-text-color);
 }
