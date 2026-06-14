@@ -501,6 +501,11 @@ header {
     margin: .6em 1em;
     width: 20%;
   }
+
+  @media (min-width: 700px) {
+    margin: .4em .5em 0 2em;
+    max-width: 50px;
+  }
 }
 
 #header__center h2 {
@@ -518,7 +523,7 @@ header {
   }
 
   @media (min-width: 700px) {
-    font-size: 1.3em;
+    
   }
 
 }
