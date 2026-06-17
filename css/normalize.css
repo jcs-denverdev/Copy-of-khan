@@ -559,7 +559,7 @@ main {
 
 main section {
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto;
 
   @media (min-width: 801px) {
     float: left;
@@ -570,10 +570,19 @@ main section {
 
 .img_container {
   width: 60%;
+
+  @media (min-width: 801px) {
+    width: 50%;
+  }
 }
 
 .img_container img {
   width: 100%;
+
+  @media (min-width: 801px) {
+    width: 90%;
+  }
+
 }
 
 main .main_txt_section {
@@ -592,7 +601,7 @@ main .main_txt_section h1 {
   margin-bottom: 0;
   font-size: 2em;
 
-  @media (min-width: 770px) {
+  @media (min-width: 550px) {
     font-size: 3em;
   }
 
@@ -603,6 +612,10 @@ main .main_txt_section #underline {
   top: -5px;
   left: 0;
   width: 175px;
+
+  @media (min-width: 801px) {
+    width: 280px;
+  }
 
 }
 
