@@ -551,7 +551,7 @@ main {
   margin: 2em 0;
 
   @media (max-width: 500px) {
-    background-color: beige;
+  
   }
 
   @media (min-width: 501px) {
@@ -572,12 +572,11 @@ main section {
 }
 
 .img_container {
-    width: 90%;
-    margin: 0 auto;
+  width: 60%;
 }
 
 .img_container img {
-  width: 60%;
+  width: 100%;
 }
 
 main .main_txt_section {
