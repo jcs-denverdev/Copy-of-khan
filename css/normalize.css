@@ -478,11 +478,6 @@ header {
 }
 
 #header__center * {
-  
-
-  @media (max-width: 500px) {
-    
-  }
 
   @media (min-width: 501px) {
     float: left;
@@ -491,10 +486,6 @@ header {
 }
 
 #header__center img {
-
-  @media (max-width: 500px) {
-    
-  }
 
   @media (min-width: 501px) {
     margin: .9em .2em;
@@ -557,23 +548,21 @@ header {
 /*******************************************/
 
 main {
-  margin: 0 auto;
+  margin: 2em 0;
 
   @media (max-width: 500px) {
-    width: 85%;
-    margin-top: 2em;
-    /* height: 600px; */
+    background-color: beige;
   }
 
   @media (min-width: 501px) {
-    width: 90%;
-    margin-top: 4em;
-    /* height: 400px; */
+
   }
 
 }
 
 main section {
+  width: 90%;
+  margin: 0 auto;
 
   /* @media (min-width: 501px) {
     float: left;
@@ -582,8 +571,13 @@ main section {
 
 }
 
-main > section > img {
-    width: 85%;
+.img_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img_container img {
+  width: 60%;
 }
 
 main .main_txt_section {
@@ -649,7 +643,7 @@ main .main_txt_section p {
 /* MAIN SECTION -- BUTTONS
 /*******************************************/
 
-.btn-container {
+.main_txt_section .btn-container {
   display: flex;
   justify-content: space-between;
 
@@ -672,7 +666,7 @@ main .main_txt_section p {
 
 }
 
-.btn-container button {
+.main_txt_section .btn-container button {
   background-color: var(--header-text-color);
   color: white;
   border-radius: 3px;
