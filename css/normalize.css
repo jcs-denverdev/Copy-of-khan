@@ -468,6 +468,8 @@ header {
     width: 80%;
     margin: 0 auto;
     background-color: bisque;
+    display: flex;
+    justify-content: center;
   }
 
   @media (min-width: 501px) {
@@ -477,14 +479,14 @@ header {
 }
 
 #header__center * {
-  float: left;
+  
 
   @media (max-width: 500px) {
     
   }
 
   @media (min-width: 501px) {
-    
+    float: left;
   }
 
 }
