@@ -419,7 +419,14 @@ header {
   min-width: 75px;
   max-width: 20%;
   float: left;
-  margin: 1.2em 0 1.2em 2em;
+
+  @media (max-width: 600px) {
+    margin: 1.2em 0 1.2em .5em;
+  }
+
+  @media (min-width: 601px) {
+    margin: 1.2em .5em;
+  }
 }
 
 #header__left select:hover {
@@ -428,13 +435,28 @@ header {
 
 #header__left form {
   float: left;
-  width: 40%;
-  margin: 1.2em 0;
+  min-width: 40%;
+  max-width: 70%;
+
+  @media (max-width: 600px) {
+    width: 40%;
+    margin: .9em 0;
+  }
+
+  @media (min-width: 601px) {
+    width: 50%;
+    margin: .9em 0;
+  }
+
+  @media (min-width: 700px) {
+
+  }
+
 }
 
 #header__left form > input {
   background-color: var(--grey-bg-color);
-  /* padding: 7px; */
+  padding: 7px;
   border: none;
   border-radius: 5px;
   width: 100%;
