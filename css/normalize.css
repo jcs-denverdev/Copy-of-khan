@@ -388,17 +388,27 @@ header {
 #header__left,
 #header__center,
 #header__right {
-    
-    @media (min-width: 501px) {
-      float: left;
-      width: 33.33%;
-    }
+
+  @media (min-width: 501px) {
+    float: left;
+    width: 33.33%;
+    height: 65px;
+  }
+
 }
 
 #header__left {
 
   @media (min-width: 501px) {
-    /* justify-content: flex-start; */
+    
+  }
+
+}
+
+#header__left * {
+
+  @media (min-width: 501px) {
+    
   }
 
 }
@@ -408,6 +418,8 @@ header {
   border: none;
   min-width: 75px;
   max-width: 20%;
+  float: left;
+  margin: 1.2em 0 1.2em 2em;
 }
 
 #header__left select:hover {
@@ -415,21 +427,22 @@ header {
 }
 
 #header__left form {
-  width: 80px;
+  float: left;
+  width: 40%;
+  margin: 1.2em 0;
 }
 
 #header__left form > input {
-    background-color: var(--grey-bg-color);
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1em;
-    width: 100%;
+  background-color: var(--grey-bg-color);
+  /* padding: 7px; */
+  border: none;
+  border-radius: 5px;
+  width: 100%;
 }
 
 #header__left form > input::placeholder {
-    color: var(--header-text-color);
-    font-weight: 600;
+  color: var(--header-text-color);
+  font-weight: 600;
 }
 
 #header__center {
