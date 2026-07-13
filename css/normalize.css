@@ -381,7 +381,7 @@ header {
     display: none;
   }
   @media (min-width: 501px) {
-    
+    display: flex;
   }
 
 }
@@ -396,14 +396,13 @@ header {
     }
 } */
 
-/* #header__left {
+#header__left {
 
   @media (min-width: 501px) {
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-} */
+}
 
 #header__left select {
     color: var(--header-text-color);
@@ -416,9 +415,9 @@ header {
     cursor: pointer;
 }
 
-/* #header__left form {
-  width: 50%;
-} */
+#header__left form {
+  width: 80px;
+}
 
 #header__left form > input {
     background-color: var(--grey-bg-color);
@@ -426,7 +425,7 @@ header {
     border: none;
     border-radius: 5px;
     margin-top: 1em;
-    /* width: 50%; */
+    width: 100%;
 }
 
 #header__left form > input::placeholder {
@@ -535,11 +534,11 @@ main > section > img {
 
 main .main_txt_section {
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     text-align: center;
   }
 
-  @media (min-width: 501px) {
+  @media (min-width: 701px) {
     padding: 0;
   }
 
