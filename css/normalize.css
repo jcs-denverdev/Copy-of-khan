@@ -509,23 +509,23 @@ main {
   @media (max-width: 500px) {
     width: 85%;
     margin-top: 2em;
-    height: 600px;
+    /* height: 600px; */
   }
 
   @media (min-width: 501px) {
     width: 90%;
     margin-top: 4em;
-    height: 400px;
+    /* height: 400px; */
   }
 
 }
 
 main section {
 
-  @media (min-width: 501px) {
+  /* @media (min-width: 501px) {
     float: left;
     width: 50%;
-  }
+  } */
 
 }
 
@@ -652,6 +652,11 @@ main .main_txt_section p {
   @media (min-width: 501px) {
     padding: 60px;
     margin-top: 2em;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 60px;
+    margin-top: 4em;
   }
 
 }
