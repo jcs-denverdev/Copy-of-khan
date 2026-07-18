@@ -587,17 +587,17 @@ main .main_txt_section p {
 
 .btn-container {
   background-color: bisque;
+  display: flex;
+  justify-content: space-between;
 
   @media (max-width: 400px) {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    
   }
 
   @media(min-width: 401px) {
-    display: flex;
-    justify-content: space-between;
+    
   }
 
   @media (min-width: 501px) {
@@ -613,20 +613,20 @@ main .main_txt_section p {
   border-style: none;
   text-decoration: none;
   cursor: pointer;
+  padding: 10px 15px;
+  width: 87px;
 
   @media (max-width: 400px) {
-    display: flex;
+    width: 100%;
+    margin: 5px;
   }
 
   @media (min-width: 401px) {
-    display: flex;
+    
   }
 
-  @media (max-width: 500px) {
-    padding: 10px 15px;
-    width: 82px;
-    /* float: left; */
-    /* margin: 0 auto; */
+  @media (min-width: 501px) {
+    
   }
 
   /* @media (min-width: 501px) {
