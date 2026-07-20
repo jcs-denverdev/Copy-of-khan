@@ -588,7 +588,12 @@ main .main_txt_section p {
 .btn-container {
   background-color: bisque;
 
-  @media(max-width: 500px) {
+  @media (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media(min-width: 401px) {
     display: flex;
     justify-content: space-between;
   }
@@ -609,7 +614,7 @@ main .main_txt_section p {
 
   @media (max-width: 500px) {
     padding: 10px 15px;
-    /* width: 50%; */
+    width: 82px;
     /* float: left; */
     /* margin: 0 auto; */
   }
