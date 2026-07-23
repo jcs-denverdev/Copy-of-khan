@@ -589,7 +589,8 @@ main .main_txt_section p {
   background-color: bisque;
 
   @media(max-width: 500px) {
-
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: 501px) {
@@ -607,17 +608,18 @@ main .main_txt_section p {
   cursor: pointer;
 
   @media (max-width: 500px) {
-    padding: 5px;
-    width: 40%;
-    margin: 10px;
+    padding: 10px 15px;
+    /* width: 50%; */
+    /* float: left; */
+    /* margin: 0 auto; */
   }
 
-  @media (min-width: 501px) {
+  /* @media (min-width: 501px) {
     padding: 10px 15px;
     width: 70%;
     margin: 10px;
-    
-  }
+  } */
+
 }
 
 .bottom_grey {
