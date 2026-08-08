@@ -581,10 +581,15 @@ main .main_txt_section p {
 
 }
 
+/******************************************
+/* MAIN SECTION -- BUTTONS
+/*******************************************/
+
 main .main_txt_section .btn-container {
 
   @media (min-width: 501px) {
-    display: flex;
+    float: left;
+    background-color: bisque;
   }
 
 }
@@ -605,6 +610,7 @@ main .main_txt_section button {
 
   @media (min-width: 501px) {
     padding: 10px 15px;
+    
   }
 }
 
