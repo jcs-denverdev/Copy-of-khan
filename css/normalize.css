@@ -364,6 +364,20 @@ template {
 /* LAYOUT
 /*******************************************/
 
+@media (max-width: 425px) {
+    
+    #header__left, #header__right {
+        display: none;
+    }
+    #header__center {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
 header {
   border-bottom: 1px solid black;
   height: 60px;
@@ -371,7 +385,6 @@ header {
 
 header div, header div *, ul li {
     float: left;
-    /* border: 1px solid green; */
 }
 
 header div {
@@ -400,7 +413,9 @@ header div {
 
 #header__left form > input {
     background-color: var(--grey-bg-color);
-    padding: 5px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
 }
 
 #header__left form > input::placeholder {
@@ -494,8 +509,8 @@ main .main_txt_section a {
 
 .bottom_grey {
     background-color: rgb(230, 230, 230);
-    clip-path: polygon(0 0, 100% 50px,100% 100%,0 100%);
-    padding: 40px;
+    clip-path: polygon(0 0, 100% 30px,100% 100%,0 100%);
+    padding: 60px;
 }
 
 .bottom_grey h2 {
