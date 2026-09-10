@@ -468,9 +468,11 @@ main .main_txt_section h1 {
     font-size: 3em;
 }
 
-main .main_txt_section h2 {
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
+main .main_txt_section #underline {
+    position: relative;
+    top: -35px;
+    left: -10px;
+    width: 80%;
 }
 
 main .main_txt_section p {
