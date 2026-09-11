@@ -457,7 +457,7 @@ main section {
 }
 
 main > section > img {
-    width: 90%;
+    width: 100%;
 }
 
 main .main_txt_section {
@@ -466,6 +466,11 @@ main .main_txt_section {
 
 main .main_txt_section h1 {
     font-size: 3em;
+}
+
+main .main_txt_section h2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
 
 main .main_txt_section p {
@@ -484,7 +489,6 @@ main .main_txt_section a {
     padding: 10px 15px;
     border-radius: 5px;
     /* float: left; */
-    width: 20%;
-    text-align: center;
+    /* text-align: center; */
     /* margin-right: 10px; */
 }
