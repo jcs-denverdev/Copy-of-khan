@@ -447,8 +447,8 @@ main {
     width: 70%;
     margin: 0 auto;
     clear: both;
-    height: 500px;
-    margin-top: 4em;
+    height: 700px;
+    margin-top: 6em;
 }
 
 main section {
@@ -457,7 +457,7 @@ main section {
 }
 
 main > section > img {
-    width: 100%;
+    width: 90%;
 }
 
 main .main_txt_section {
@@ -468,9 +468,23 @@ main .main_txt_section h1 {
     font-size: 3em;
 }
 
+main .main_txt_section p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+main .main_txt_section aside {
+    
+    height: 40px;
+}
+
 main .main_txt_section a {
     background-color: var(--header-text-color);
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
+    /* float: left; */
+    width: 20%;
+    text-align: center;
+    /* margin-right: 10px; */
 }
