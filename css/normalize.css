@@ -408,11 +408,23 @@ header div {
     font-weight: 600;
 }
 
+#header__center * {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 #header__center h2 {
     font-size: 1.8em;
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#header__center img {
+    width: 10%;
+    margin-left: 4em;
 }
 
 #header__right ul {
