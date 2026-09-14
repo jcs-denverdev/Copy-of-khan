@@ -411,6 +411,10 @@ header div {
     margin-top: 15px;
 }
 
-#header__right {
-    
+#header__right ul li {
+    list-style: none;
+}
+
+#header__right ul li a {
+    text-decoration: none;
 }
