@@ -403,3 +403,14 @@ header div {
     color: var(--header-text-color);
     font-weight: 600;
 }
+
+#header__center h2 {
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#header__right {
+    
+}
