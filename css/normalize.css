@@ -82,7 +82,7 @@ a {
 }
 
 /**
- * font styling variables
+ * custom styling variables
  */
 :root {
     --header-text-color: rgb(25,101,242);
@@ -380,15 +380,26 @@ header div {
 }
 
 #header__left {
-    background-color: rgb(194, 215, 234);
     height: 100%;
-    padding: 1.2em;
 }
 
 #header__left > * {
     margin-left: 5em;
+    margin-top: 15px;
+}
+
+#header__left select {
+    color: var(--header-text-color);
+    background: none;
+    border: none;
 }
 
 #header__left form > input {
-    background-color: ;
+    background-color: var(--grey-bg-color);
+    padding: 5px;
+}
+
+#header__left form > input::placeholder {
+    color: var(--header-text-color);
+    font-weight: 600;
 }
