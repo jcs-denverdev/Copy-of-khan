@@ -371,7 +371,7 @@ header {
 
 header div, header div *, ul li {
     float: left;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 header div {
@@ -411,10 +411,36 @@ header div {
     margin-top: 15px;
 }
 
+#header__right ul {
+    width: 100%;
+}
+
+
 #header__right ul li {
     list-style: none;
+    width: 33.33%;
 }
 
 #header__right ul li a {
     text-decoration: none;
+    color: var(--header-text-color);
+}
+
+
+main {
+    margin: 4em;
+    clear: both;
+}
+
+main section {
+    float: left;
+    width: 50%;
+}
+
+main > section > img {
+    width: 80%;
+}
+
+main .main_txt_section {
+    
 }
