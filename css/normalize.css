@@ -421,7 +421,7 @@ header div {
     width: 33.33%;
 }
 
-#header__right ul li a {
+#header__right ul li a, main .main_txt_section a {
     text-decoration: none;
     color: var(--header-text-color);
 }
@@ -442,5 +442,16 @@ main > section > img {
 }
 
 main .main_txt_section {
-    
+    padding-right: 3.4em;
+}
+
+main .main_txt_section h1 {
+    font-size: 3em;
+}
+
+main .main_txt_section a {
+    background-color: var(--header-text-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
