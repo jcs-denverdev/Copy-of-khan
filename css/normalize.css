@@ -384,7 +384,7 @@ header div {
 }
 
 #header__left > * {
-    margin-left: 5em;
+    margin-left: 1em; /* Fix this spacing better */
     margin-top: 15px;
 }
 
@@ -392,6 +392,10 @@ header div {
     color: var(--header-text-color);
     background: none;
     border: none;
+}
+
+#header__left select:hover {
+    cursor: pointer;
 }
 
 #header__left form > input {
