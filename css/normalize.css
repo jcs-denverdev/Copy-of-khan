@@ -432,8 +432,11 @@ header div {
 
 
 main {
-    margin: 4em;
+    width: 70%;
+    margin: 0 auto;
     clear: both;
+    height: 500px;
+    margin-top: 4em;
 }
 
 main section {
@@ -442,11 +445,11 @@ main section {
 }
 
 main > section > img {
-    width: 80%;
+    width: 100%;
 }
 
 main .main_txt_section {
-    padding-right: 3.4em;
+    padding: 0 2.5em 0 3em;
 }
 
 main .main_txt_section h1 {
