@@ -367,11 +367,55 @@ template {
 header {
     border-bottom: 1px solid black;
     height: 65px;
+    display: flex;
 
     @media (max-width: 500px) {
       display: flex; /* added flex here so header__center * height would match header */
     }
 
+}
+
+#header__left, #header__right {
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+
+}
+
+#header__left,
+#header__center,
+#header__right {
+    
+    @media (min-width: 501px) {
+      
+    }
+}
+
+
+
+#header__left select {
+    color: var(--header-text-color);
+    border: none;
+    min-width: 75px;
+    max-width: 20%;
+}
+
+#header__left select:hover {
+    cursor: pointer;
+}
+
+#header__left form > input {
+    background-color: var(--grey-bg-color);
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#header__left form > input::placeholder {
+    color: var(--header-text-color);
+    font-weight: 600;
 }
 
 #header__center {
@@ -385,41 +429,58 @@ header {
 
 #header__center * {
 
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: 500px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }
 
   @media (min-width: 501px) {
-    /* width: 70%; */
-    border: 1px solid blue;
-    /* margin: 0 auto; */
-    margin-top: 10px;
+    
   }
 
 }
 
 #header__center img {
     width: 50px;
+
+    @media (min-width: 501px) {
+      width: 40px;
+    }
 }
 
 #header__center h2 {
-    margin: 0;
+  margin: 0;
+  
+  @media (max-width: 500px) { 
     font-size: 1.5em;
+  }
+
+  @media (min-width: 501px) {
+    font-size: 1.3em;
+  }
+
 }
 
-#header__center h2 {
-    font-size: 1.8em;
-    margin-bottom: 0;
+#header__right ul {
+  margin: 0;
+}
+
+#header__right ul li {
+  
+  list-style: none;
+  border: 1px solid orange;
+}
+
+#header__right ul li a, main .main_txt_section a {
+    text-decoration: none;
+    color: var(--header-text-color);
 }
 
 
 @media (max-width: 500px) {
-    
-    #header__left, #header__right {
-        display: none;
-    }
 
     main {
         width: 85%;
@@ -483,62 +544,6 @@ header {
 
 
 @media (min-width: 501px) and (max-width: 768px) {
-
-    header div, header div *, ul li {
-        float: left;
-    }
-
-    #header__left, #header__center, #header__right {
-        /* height: 100%;
-        background-color: green; */
-        width: 30%;
-    }
-
-    #header__left > * {
-        margin-left: 1em; /* Fix this spacing better */
-        margin-top: 15px;
-    }
-
-    #header__left select {
-        color: var(--header-text-color);
-        background: none;
-        border: none;
-        min-width: 75px;
-        width: 40%;
-    }
-
-    #header__left select:hover {
-        cursor: pointer;
-    }
-
-    #header__left form > input {
-        background-color: var(--grey-bg-color);
-        padding: 7px;
-        border: none;
-        border-radius: 5px;
-        width: 40%;
-    }
-
-    #header__left form > input::placeholder {
-        color: var(--header-text-color);
-        font-weight: 600;
-    }
-
-
-    /* #header__right ul {
-        width: 100%;
-    } */
-
-
-    #header__right ul li {
-        list-style: none;
-        /* width: 33.33%; */
-    }
-
-    #header__right ul li a, main .main_txt_section a {
-        text-decoration: none;
-        color: var(--header-text-color);
-    }
 
 
     main {
