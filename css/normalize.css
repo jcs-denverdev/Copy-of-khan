@@ -447,7 +447,7 @@ main {
     width: 70%;
     margin: 0 auto;
     clear: both;
-    height: 700px;
+    height: 600px;
     margin-top: 6em;
 }
 
@@ -490,7 +490,16 @@ main .main_txt_section a {
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
-    /* float: left; */
-    /* text-align: center; */
-    /* margin-right: 10px; */
+}
+
+.bottom_grey {
+    background-color: rgb(230, 230, 230);
+    clip-path: polygon(0 0, 100% 50px,100% 100%,0 100%);
+    padding: 40px;
+}
+
+.bottom_grey h2 {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 500;
 }
