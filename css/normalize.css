@@ -426,14 +426,13 @@ header {
 
     main .main_txt_section p {
         font-size: 1.2em;
-        margin: 0;
+        margin: 0 0 2em 0;
     }
 
-    /* main .main_txt_section div {
-        margin-top: 30px;
-        border: 1px dotted dodgerblue;
-        
-    } */
+    main .main_txt_section div {
+        background-color: rgb(231, 161, 148);
+        padding: 10px;
+    }
 
     main .main_txt_section button {
         background-color: var(--header-text-color);
@@ -443,8 +442,8 @@ header {
         border-style: none;
         text-decoration: none;
         float: left;
-        width: 50%;
-        margin: 1em;
+        width: 40%;
+        margin: 10px;
     }
 
     .bottom_grey {
