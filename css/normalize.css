@@ -397,16 +397,11 @@ header {
     }
 
     main {
-        width: 70%;
+        width: 85%;
         margin: 0 auto;
         clear: both;
         height: 600px;
-        margin-top: 6em;
-    }
-
-    main section {
-        float: left;
-        width: 50%;
+        margin-top: 2em;
     }
 
     main > section > img {
@@ -414,35 +409,54 @@ header {
     }
 
     main .main_txt_section {
-        padding: 0 2.5em 0 3em;
+        text-align: center;
     }
 
     main .main_txt_section h1 {
-        font-size: 3em;
+        font-size: 2em;
+        margin: 0;
     }
 
     main .main_txt_section #underline {
         position: relative;
-        top: -35px;
-        left: -10px;
-        width: 80%;
+        top: -5px;
+        left: 0;
+        width: 70%;
     }
 
     main .main_txt_section p {
         font-size: 1.2em;
-        margin-bottom: 2em;
+        margin: 0;
     }
 
-    main .main_txt_section aside {
-        
-        height: 40px;
+    main .main_txt_section div {
+        margin-top: 30px;
+        border: 1px dotted dodgerblue;
+        /* padding: 10px; */
+        /* clear: both; */
     }
 
-    main .main_txt_section a {
+    main .main_txt_section button {
         background-color: var(--header-text-color);
         color: white;
-        padding: 10px 15px;
-        border-radius: 5px;
+        padding: 5px 15px;
+        border-radius: 3px;
+        border-style: none;
+        text-decoration: none;
+        /* float: left; */
+    }
+
+    .bottom_grey {
+        background-color: rgb(230, 230, 230);
+        clip-path: polygon(0 0, 100% 15px,100% 100%,0 100%);
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .bottom_grey h2 {
+        font-size: 1.6em;
+        text-align: center;
+        font-weight: 500;
     }
 
 }
@@ -564,12 +578,7 @@ main .main_txt_section p {
     margin-bottom: 2em;
 }
 
-main .main_txt_section aside {
-    
-    height: 40px;
-}
-
-main .main_txt_section a {
+main .main_txt_section button {
     background-color: var(--header-text-color);
     color: white;
     padding: 10px 15px;
