@@ -443,12 +443,10 @@ header {
     main .main_txt_section button {
         background-color: var(--header-text-color);
         color: white;
-        padding: 5px 15px;
+        padding: 5px;
         border-radius: 3px;
         border-style: none;
         text-decoration: none;
-        margin: 5px;
-        width: 50%;
         cursor: pointer;
         width: 40%;
         margin: 10px;
@@ -456,9 +454,13 @@ header {
 
     .bottom_grey {
         background-color: rgb(247, 245, 244);
-        clip-path: polygon(0 0, 100% 15px,100% 100%,0 100%);
+        clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
         padding: 30px;
-        margin-top: 8em;
+        
+        @media (max-width: 400px) {
+          margin-top: 3em;
+        }
+        margin-top: 5em;
     }
 
     .bottom_grey h2 {
