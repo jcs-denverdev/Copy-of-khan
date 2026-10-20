@@ -367,6 +367,7 @@ template {
 header {
     border-bottom: 1px solid black;
     height: 65px;
+    display: flex; /* added flex here so header__center * height would match header */
 }
 
 @media (max-width: 500px) {
@@ -377,7 +378,7 @@ header {
 
     #header__center {
         width: 90%;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     #header__center * {
@@ -435,6 +436,10 @@ header {
         margin: 0 0 1em 0;
     }
 
+    main .main_txt_section .btn-container {
+      float: left;
+    }
+
     main .main_txt_section button {
         background-color: var(--header-text-color);
         color: white;
@@ -445,9 +450,8 @@ header {
         margin: 5px;
         width: 50%;
         cursor: pointer;
-        /* float: left;
         width: 40%;
-        margin: 10px; */
+        margin: 10px;
     }
 
     .bottom_grey {
