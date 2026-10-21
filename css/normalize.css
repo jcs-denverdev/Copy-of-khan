@@ -369,32 +369,38 @@ header {
     height: 65px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     
     #header__left, #header__right {
         display: none;
     }
 
     #header__center {
-        width: 100%;
-        padding-top: 5px;
-    }
-
-    #header__center * {
-        /* float: left; */
-        display: block;
+        width: 90%;
         margin: 0 auto;
     }
 
+    #header__center * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* #header__center div {
+        width: 80%;
+        margin: 0 auto;
+    } */
+
     #header__center img {
-        width: 10%;
-        
+        width: 50px;
     }
 
     #header__center h2 {
+        margin: 0;
         font-size: 1.5em;
-        text-align: center;
     }
+
+
 
     main {
         width: 85%;
@@ -462,19 +468,16 @@ header {
 
 
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
 
     header div, header div *, ul li {
         float: left;
     }
 
-    header div {
-        width: 33.33%;
-        height: 100%;
-    }
-
-    #header__left {
-        height: 100%;
+    #header__left, #header__center, #header__right {
+        /* height: 100%;
+        background-color: green; */
+        width: 30%;
     }
 
     #header__left > * {
@@ -486,6 +489,8 @@ header {
         color: var(--header-text-color);
         background: none;
         border: none;
+        min-width: 75px;
+        width: 40%;
     }
 
     #header__left select:hover {
@@ -497,6 +502,7 @@ header {
         padding: 7px;
         border: none;
         border-radius: 5px;
+        width: 40%;
     }
 
     #header__left form > input::placeholder {
@@ -505,32 +511,32 @@ header {
     }
 
     #header__center * {
-        width: 70%;
-        margin: 0 auto;
+        /* width: 70%; */
+        border: 1px solid blue;
+        /* margin: 0 auto; */
         margin-top: 10px;
     }
 
     #header__center h2 {
         font-size: 1.8em;
-        width: 50%;
         text-align: center;
-        margin-top: 15px;
+        /* margin-top: 15px; */
         margin-bottom: 0;
     }
 
     #header__center img {
         width: 10%;
-        margin-left: 4em;
+        /* margin-left: 4em; */
     }
 
-    #header__right ul {
+    /* #header__right ul {
         width: 100%;
-    }
+    } */
 
 
     #header__right ul li {
         list-style: none;
-        width: 33.33%;
+        /* width: 33.33%; */
     }
 
     #header__right ul li a, main .main_txt_section a {
