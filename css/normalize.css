@@ -361,7 +361,7 @@ template {
 
 
 /******************************************
-/* LAYOUT
+/* HEADER
 /*******************************************/
 
 header {
@@ -391,7 +391,6 @@ header {
       
     }
 }
-
 
 
 #header__left select {
@@ -429,7 +428,7 @@ header {
 
 #header__center * {
 
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -480,19 +479,42 @@ header {
 }
 
 
+/******************************************
+/* MAIN SECTION
+/*******************************************/
+
+main {
+
+  margin: 0 auto;
+  height: 600px;
+
+  @media (max-width: 500px) {
+    width: 85%;
+    margin-top: 2em;
+  }
+
+  @media (min-width: 501px) {
+    width: 70%;
+    margin-top: 6em;
+  }
+
+}
+
+main section {
+
+  @media (min-width: 501px) {
+    float: left;
+    width: 50%;
+  }
+
+}
+
+main > section > img {
+    width: 95%;
+}
+
+
 @media (max-width: 500px) {
-
-    main {
-        width: 85%;
-        margin: 0 auto;
-        clear: both;
-        height: 600px;
-        margin-top: 2em;
-    }
-
-    main > section > img {
-        width: 95%;
-    }
 
     main .main_txt_section {
         text-align: center;
@@ -546,22 +568,7 @@ header {
 @media (min-width: 501px) and (max-width: 768px) {
 
 
-    main {
-        width: 70%;
-        margin: 0 auto;
-        clear: both;
-        height: 600px;
-        margin-top: 6em;
-    }
 
-    main section {
-        float: left;
-        width: 50%;
-    }
-
-    main > section > img {
-        width: 100%;
-    }
 
     main .main_txt_section {
         padding: 0 2.5em 0 3em;
