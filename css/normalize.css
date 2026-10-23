@@ -508,16 +508,17 @@ header {
 main {
 
   margin: 0 auto;
-  height: 600px;
 
   @media (max-width: 500px) {
     width: 85%;
     margin-top: 2em;
+    height: 600px;
   }
 
   @media (min-width: 501px) {
     width: 90%;
     margin-top: 4em;
+    height: 400px;
   }
 
 }
@@ -542,7 +543,8 @@ main .main_txt_section {
   }
 
   @media (min-width: 501px) {
-    padding: 0 2em;
+    padding: 0;
+    background-color: bisque;
   }
 
 }
@@ -551,7 +553,7 @@ main .main_txt_section h1 {
 
   margin: 0;
 
-  font-size: 1.5em;
+  font-size: 2em;
 
   /* @media (max-width: 500px) {
     font-size: 2em;
@@ -575,7 +577,7 @@ main .main_txt_section #underline {
     position: relative;
     top: -5px;
     left: -5px;
-    width: 60%;
+    width: 70%;
   }
 
 }
@@ -588,7 +590,7 @@ main .main_txt_section p {
   }
 
   @media (min-width: 501px) {
-    margin: 0 0 2em 0;
+    margin: 1em 0 2em 0;
   }
 
 }
@@ -620,38 +622,34 @@ main .main_txt_section button {
   }
 }
 
+.bottom_grey {
+  background-color: rgb(247, 245, 244);
 
+  @media (max-width: 500px) {
+    clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
+    padding: 30px;
+    margin-top: 5em;
+  }
 
-@media (max-width: 500px) {
-
-    .bottom_grey {
-        background-color: rgb(247, 245, 244);
-        clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 100%);
-        padding: 30px;
-        margin-top: 5em;
-    }
-
-    .bottom_grey h2 {
-        font-size: 1.6em;
-        text-align: center;
-        font-weight: 500;
-    }
+  @media (min-width: 501px) {
+    clip-path: polygon(0 0, 100% 30px,100% 100%,0 100%);
+    padding: 60px;
+    margin-top: 2em;
+  }
 
 }
 
+.bottom_grey h2 {
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: 500;
 
-@media (min-width: 501px) and (max-width: 768px) {
+  @media (max-width: 500px) {
+    
+  }
 
+  @media (min-width: 501px) {
 
-    .bottom_grey {
-        background-color: rgb(247, 245, 244);
-        clip-path: polygon(0 0, 100% 30px,100% 100%,0 100%);
-        padding: 60px;
-    }
+  }
 
-    .bottom_grey h2 {
-        font-size: 1.6em;
-        text-align: center;
-        font-weight: 500;
-    }
 }
